@@ -43,18 +43,15 @@ for i in range(len(X)):
 m = numerator / denominator
 c = y_mean - (m * X_mean)
 
-print(m, c)
+print(f"Slope:{m}\nConstant:{c}")
 plt.scatter(X, Y)
 y_pred = m * X + c
+print("y-predictions",y_pred)
 plt.plot(X, y_pred, color='red')
 plt.show()
-print(m, c)
 ```
 ## Output:
-![Screenshot 2024-08-22 205646](https://github.com/user-attachments/assets/4deaeaa1-8d11-40ec-b772-c55fc111dec4)
-
-![Screenshot 2024-08-22 205700](https://github.com/user-attachments/assets/055e74ed-3f3b-4cd7-8a4e-f6e55fa15b2d)
-
+![image](https://github.com/user-attachments/assets/bee8cd3a-4a6a-4fc6-9f6a-8d7292e3f134)
 
 ## Result:
 Thus the univariate Linear Regression was implemented to fit a straight line using least squares using python programming.
